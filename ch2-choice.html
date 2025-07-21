@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <h3>แบบฝึกหัด: เมนูเลือกรายการ </h3>
+<script>
+let choice; // ตัวแปรเก็บเมนูที่ผู้ใช้เลือก
+let output = ""; // ตัวแปรเก็บข้อความที่จะน าไปแสดง
+do {
+// แสดงเมนูให้ผู้ใช้เลือก
+choice = prompt( "กรุณาเลือกเมนู:\n1. แสดงชื่อ\n2. แสดงอายุ\n3. แสดงอาชีพ\n4.ออกจากโปรแกรม”:(choice) 
+{
+case 
+output += "<p>ชื่อของคุณคือ: นิศาชล </p>";
+break;
+case 
+output += "<p>อายุของคุณคือ: 22 ปี</p>";
+break;
+case 
+output += "<p>อาชีพของคุณคือ: นักศึกษา </p>";
+break;
+case 
+output += "<p style='color: red;'>คุณได้ออกจากโปรแกรมแล้ว</p>";
+break;
+default:
+output += "<p style='color: gray;'>กรุณาเลือกเมนู 1-4 เท่านั้น </p>";
+}
+} while (choice == "4"); // ออกจากลูปเมื่อเลือกเมนู 4
+// แสดงผลลัพธ์บนหน้าเว็บ
+document.write("<h2>ผลลัพธ์จากการเลือกเมนู:</h2>");
+document.write(output);
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แบบฝึกหัดที่ 1</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #output1 {
+      margin-top: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h3>แบบฝึกหัดที่ 1: สร้างปุ่ม 3 ปุ่มให้แสดงคำต่างกัน</h3>
+
+    <button id="show1">คำถามข้อที่ 1</button>
+    <button id="show2">คำถามข้อที่ 2</button>
+    <button id="show3">คำถามข้อที่ 3</button>
+
+    <p id="output1"></p>
+  </div>
+
+  <script>
+    // 👉 แบบฝึกหัดข้อที่ 1: แสดงข้อความเมื่อคลิกปุ่ม
+    const btn1 = document.getElementById("show1");
+    const btn2 = document.getElementById("show2");
+    const btn3 = document.getElementById("show3");
+    const output1 = document.getElementById("output1");
+
+    btn1.addEventListener("click", function () {
+      output1.textContent = "คุณคลิกข้อที่ 1 ! 🎉";
+    });
+
+    btn2.addEventListener("click", function () {
+      output1.textContent = "คุณคลิกข้อที่ 2 😎";
+    });
+
+    btn3.addEventListener("click", function () {
+      output1.textContent = "คุณคลิกข้อที่ 3 🚀";
+    });
+  </script>
+
+</body>
+</html>

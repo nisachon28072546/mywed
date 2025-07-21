@@ -1,0 +1,43 @@
+<h2 id="greeting">ยินดีต้อนรับ</h2>
+<button onclick=
+
+"changeText()">เปลี่ยนข้อควําม</button>
+
+<script>
+function changeText() {
+// ใช้ getElementById เพื่อเปลี่ยนข้อควํามใน <h2>
+document.getElementById("greeting").innerHTML =
+
+"ขอบคุณที่เข้ํามําเรียนรู้!";
+
+}
+</script>
+
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+
+"สวัสดี JavaScript!";
+
+</script>
+
+<p id="demo">ยินดีต้อนรับ</p>
+<script>
+let text = document.getElementById("demo").innerHTML;
+alert("ข้อควํามใน <p>: " + text);
+</script>
+
+<button onclick=
+
+"showMessage()">คลิกแสดงข้อควําม</button>
+
+<p id="msg"></p>
+
+<script>
+function showMessage() {
+document.getElementById("msg").innerHTML =
+
+"คุณกดปุ่มแล้ว!";
+
+}
+</script>

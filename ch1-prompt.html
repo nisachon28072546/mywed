@@ -1,0 +1,13 @@
+<h2>การใช้งาน การใช้งาน prompt</h2>
+<script>
+    // รับค่าชื่อจากผู้ใช้ (string)
+    let name = prompt("กรุณาใส่ชื่อของคุณ:");
+    // รับค่าอายุจากผู้ใช้ (number)
+    let ageInput = prompt("กรุณาใส่อายุของคุณ:");
+    console.log(typeof (ageInput));
+    let age = parseInt(ageInput);
+    console.log(typeof (age));
+    // คำนวณปีเกิด (พ.ศ.)
+    let birthYear = 2568 -  age;
+    // แสดงผล
+    //alert('คุณชื่อ ${name}\n คุณมีอายุ ')
